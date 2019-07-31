@@ -26,7 +26,7 @@ app.get('/costs/:categories', (req, res) => {
 	res.send(category)
 })
 
-app.get('/costs/:categories', (req, res) => {
+app.get('/costs/', (req, res) => {
 	let category = costs.find((costs) => {
 		return costs.categories === String(req.params.categories)
 	})
